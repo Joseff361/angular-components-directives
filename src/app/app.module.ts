@@ -11,7 +11,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MenuComponent } from './menu/menu.component'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatListModule } from '@angular/material/list';
-
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 //Decorator: Is a function that modifies js classes
 @NgModule({ // Allow you spcify some details about the module
@@ -25,7 +27,10 @@ import { MatListModule } from '@angular/material/list';
     BrowserAnimationsModule,
     MatToolbarModule,
     FlexLayoutModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [], //services
   bootstrap: [AppComponent]
