@@ -7,19 +7,25 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; //The js file = component
 
 
-import { MatToolbarModule } from '@angular/material/toolbar'; 
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MenuComponent } from './menu/menu.component'; 
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatListModule } from '@angular/material/list';
+
 
 //Decorator: Is a function that modifies js classes
 @NgModule({ // Allow you spcify some details about the module
   //Metadata
   declarations: [ //components, directives and pipes
-    AppComponent
+    AppComponent, MenuComponent
   ],
   imports: [ //third party modules
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    FlexLayoutModule,
+    MatListModule
   ],
   providers: [], //services
   bootstrap: [AppComponent]
